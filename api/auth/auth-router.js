@@ -57,6 +57,7 @@ router.get('/logout', async (req, res, next) => {
     res.json({
       message: 'no session'
     })
+    next()
   }
 })
 
